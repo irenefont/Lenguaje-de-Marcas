@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Minimalista</title>
+    <style>
+        /* Centrando todo el contenido */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f9f9f9; /* Fondo claro */
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        header, main, footer {
+            width: 90%; /* Para mantener todo bien alineado en pantallas grandes */
+            max-width: 800px;
+        }
+
+        table {
+            margin: 20px auto; /* Centrar la tabla horizontalmente */
+            border-collapse: collapse;
+            width: 100%; /* Ocupa todo el ancho disponible en el contenedor */
+        }
+
+        th, td {
+            border: 1px solid #d6d6d6; /* Bordes suaves */
+            padding: 10px;
+        }
+
+        th {
+            background-color: #e9f5ff; /* Fondo azul claro */
+            color: #333; /* Texto oscuro */
+        }
+
+        td {
+            background-color: #ffffff; /* Fondo blanco */
+            color: #555; /* Texto gris oscuro */
+        }
+
+        nav {
+            width: 100%;
+            background-color: #f5f5f5; /* Fondo gris claro */
+            padding: 10px 0;
+            border-bottom: 1px solid #d6d6d6; /* Línea divisoria */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #007acc; /* Azul amigable */
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #005f99; /* Azul más oscuro */
+        }
+
+        h1 {
+            color: #007acc; /* Azul principal */
+        }
+
+        h2 {
+            color: #005f99; /* Azul oscuro */
+        }
+
+        p {
+            color: #333; /* Texto principal */
+        }
+
+        footer {
+            color: #777; /* Texto gris suave */
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #007acc; /* Enlaces */
+        }
+
+        a:hover {
+            color: #005f99; /* Enlaces al pasar el cursor */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Bienvenido a mi página web</h1>
+    <h2>Subtítulo</h2>
+    <p>Este es un diseño simple y funcional creado únicamente con HTML.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#tabla">Tabla</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="tabla">
+        <h2>Tabla de Información</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>País</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>25</td>
+                <td>España</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>30</td>
+                <td>México</td>
+            </tr>
+            <tr>
+                <td>Laura</td>
+                <td>28</td>
+                <td>Argentina</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="acerca">
+        <h2>Acerca de</h2>
+        <p>Esta página fue creada como un ejemplo de diseño minimalista utilizando únicamente HTML.</p>
+        <p>El propósito es mostrar que, aunque básico, HTML puede ser suficiente para transmitir información.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si deseas ponerte en contacto, puedes enviarme un correo a <a href="mailto:ejemplo@correo.com">ejemplo@correo.com</a>.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Página Minimalista. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
