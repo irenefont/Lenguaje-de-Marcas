@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rutas absolutas y relativas</title>
+</head>
+<body>
+    <h1 align="center">Rutas absolutas y relativas</h1>
+    <h2 align="center">Tabla para verlo visual</h2>
+
+    <table border="1" cellpadding="10" align="center">
+        <thead>
+            <tr>
+                <td>Donde estoy</td>
+                <td>Dónde quiero ir</td>
+                <td>La ruta del "href"</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>arrel.html</td>
+                <td>textual.html</td>
+                <td>href="server/subdir/direct/textual.html"</td>
+            </tr>
+            <tr>
+                <td>docu.html</td>
+                <td>llista.html</td>
+                <td>href="llista.html"</td>
+            </tr>
+            <tr>
+                <td>docu.html</td>
+                <td>llista.html</td>
+                <td>href="llista.html"</td>
+            </tr>
+            <tr>
+                <td>carta.html</td>
+                <td>prova.html</td>
+                <td>href="../prova/prova.html"</td>
+            </tr>
+            <tr>
+                <td>carta.html</td>
+                <td>docu.html</td>
+                <td>href="../subdir/docu.html"</td>
+            </tr>
+            <tr>
+                <td>textual.html</td>
+                <td>arrel.html</td>
+                <td>href="../../arrel.html"</td>
+            </tr>
+            <tr>
+                <td>textual.html</td>
+                <td>subdir (a la carpeta)</td>
+                <td>href="./../"</td>
+            </tr>
+            <tr>
+                <td>textual.html</td>
+                <td>prova (a la carpeta)</td>
+                <td>href="../../prova/"</td>
+            </tr>
+            <tr>
+                <td>textual.html</td>
+                <td>prova.html</td>
+                <td>href="../../prova/prova.html"</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <a href="../../index.html">
+        <button>Volver a Inicio</button>
+    </a>
+</body>
+</html>
